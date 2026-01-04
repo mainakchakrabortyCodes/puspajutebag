@@ -1,0 +1,123 @@
+<footer class="bg-gray-900 text-gray-300 py-12 md:py-16 relative overflow-hidden">
+    <div class="absolute inset-0 z-0 bg- bg-cover bg-center bg-no-repeat opacity-20"></div>
+
+    <div class="container md:px-8 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
+
+            <div class="md:col-span-3 lg:col-span-2">
+                <div class="flex items-center mb-4">
+                    <img src="/assets/logo.png" alt="Param Jute Products Logo" class="w-12 h-12 mr-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary">Param Jute Products</h3>
+                        <p class="text-sm text-gray-400">Eco-Friendly Solutions</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400 mb-6 max-w-md">
+                    Leading manufacturer of 100% biodegradable eco-friendly bags. Committed to sustainability, quality,
+                    and social responsibility.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-primary hover:text-white transition-colors">
+                        <i class="fab fa-facebook-f text-sm"></i>
+                    </a>
+                    <a href="#"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-primary hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-sm"></i>
+                    </a>
+                    <a href="#"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-primary hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-sm"></i>
+                    </a>
+                    <a href="#"
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-primary hover:text-white transition-colors">
+                        <i class="fab fa-linkedin-in text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <h4 class="text-lg font-semibold mb-6 text-primary">Products</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-primary transition-colors">Cotton Bags</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Jute Bags</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Juco Bags</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Canvas Bags</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Gift Bags</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Handicrafts</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-1">
+                <h4 class="text-lg font-semibold mb-6 text-primary">Quick Links</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#home" class="hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="#profile" class="hover:text-primary transition-colors">About Us</a></li>
+                    <li><a href="#products" class="hover:text-primary transition-colors">Products</a></li>
+                    <li><a href="#testimonials" class="hover:text-primary transition-colors">Testimonials</a></li>
+                    <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-1">
+                <h4 class="text-lg font-semibold mb-6 text-primary">Contact</h4>
+                <ul class="space-y-3 text-sm">
+                    <li>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                            <p class="text-gray-400">123 Green Street, Jute City, Earth, 456789</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="tel:+919876543210" class="flex items-center hover:text-primary transition-colors">
+                            <i class="fas fa-phone-alt text-primary mr-3"></i>
+                            <p>+91 98765 43210</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@paramjute.com"
+                            class="flex items-center hover:text-primary transition-colors">
+                            <i class="fas fa-envelope text-primary mr-3"></i>
+                            <p>info@paramjute.com</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 text-center">
+            <p class="text-gray-400 text-sm md:text-base">
+                &copy; 2025 Param Jute Products. All rights reserved. | Designed for a sustainable future 🌱
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+<button id="scrollToTop"
+    class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-primary-dark transition-all duration-300 z-50 hide">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    // Scroll to top functionality
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.classList.remove('hide');
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+            scrollToTopBtn.classList.add('hide');
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>

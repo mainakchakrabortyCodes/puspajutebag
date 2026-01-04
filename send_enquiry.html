@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Param Jute Products - 100% Biodegradable Eco-Friendly Bags</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <script src="js/layout.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    
+   
+</head>
+
+<body class="bg-primary-bg">
+
+    <!-- Header Component -->
+    <div id="header-placeholder">
+    </div>
+
+    <main class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs font-semibold text-sm text-gray-500 mb-6">
+            <a href="#" class="text-primary">Home</a>
+            <span class="font-semibold ">Enquiry</span>
+        </div>
+
+        <div class="content-grid">
+            <!-- Main Content Area -->
+            <div>
+                <section class="card mb-8">
+                    <h1 class="section-title mb-6">Enquiry</h1>
+
+                    <form id="enquiry-form" class="space-y-6" action="#" method="post" novalidate>
+                                    <p class="text-sm text-gray-500">Fields marked with <span class="text-red-500">*</span> are required.</p>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <!-- Product Code -->
+                                        <div>
+                                            <label for="product_code" class="block text-sm font-medium text-gray-700 mb-1">
+                                                Product Code <span class="text-red-500">*</span>
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="product_code"
+                                                name="product_code"
+                                                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                                                value="OM-0115J"
+                                                readonly
+                                                required
+                                            />
+                                        </div>
+                                        <!-- Name -->
+                                        <div>
+                                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+                                                Name <span class="text-red-500">*</span>
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                name="name"
+                                                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                                                placeholder="Enter your name"
+                                                required
+                                            />
+                                        </div>
+                                        <!-- Company Name -->
+                                        <div>
+                                            <label for="company" class="block text-sm font-medium text-gray-700 mb-1">
+                                                Company Name <span class="text-red-500">*</span>
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="company"
+                                                name="company"
+                                                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                                                placeholder="Enter your company name"
+                                                required
+                                            />
+                                        </div>
+                                        <!-- Email -->
+                                        <div>
+                                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                                                Email <span class="text-red-500">*</span>
+                                            </label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                                                placeholder="Enter your email"
+                                                required
+                                            />
+                                        </div>
+                                        <!-- Telephone -->
+                                        <div>
+                                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
+                                                Telephone No <span class="text-red-500">*</span>
+                                            </label>
+                                            <input
+                                                type="tel"
+                                                id="phone"
+                                                name="phone"
+                                                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                                                placeholder="Enter your phone number"
+                                                inputmode="tel"
+                                                pattern="[0-9+\-() ]{7,}"
+                                                required
+                                            />
+                                        </div>
+                                        <div>
+                                            <label for="quantity" class="block text-sm font-medium text-gray-700 mb-1">
+                                               Order Quantity <span class="text-red-500">*</span>
+                                            </label>
+                                            <input
+                                                type="number"
+                                                id="quantity"
+                                                name="quantity"
+                                                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                                                placeholder="Enter order quantity"
+                                                inputmode="numeric"
+                                                pattern="[0-9]*"
+                                                required
+                                            />
+                                        </div>
+                                        <!-- Address -->
+                                        <div class="md:col-span-2">
+                                            <label for="address" class="block text-sm font-medium text-gray-700 mb-1">
+                                                Address <span class="text-red-500">*</span>
+                                            </label>
+                                            <textarea
+                                                id="address"
+                                                name="address"
+                                                rows="3"
+                                                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                                                placeholder="Enter your address"
+                                                required
+                                            ></textarea>
+                                        </div>
+                                        <!-- Enquiry Details -->
+                                        <div class="md:col-span-2">
+                                            <label for="enquiry" class="block text-sm font-medium text-gray-700 mb-1">
+                                                Enquiry Details<span class="text-red-500">*</span>
+                                            </label>
+                                            <textarea
+                                                id="enquiry"
+                                                name="enquiry"
+                                                rows="4"
+                                                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                                                placeholder="Enter your message"
+                                                required
+                                            ></textarea>
+                                        </div>
+                                        <!-- Submit Button -->
+                                        <div class="md:col-span-2">
+                                            <button
+                                                type="submit"
+                                                class="w-full rounded-md bg-primary text-white px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-offset-2"
+                                            >
+                                                Send Enquiry
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                    </section>
+                </div>
+
+            <!-- Sidebar Area -->
+            <div class="space-y-8">
+                <!-- Product List Sidebar -->
+                <aside class="sidebar h-fit sticky top-8">
+            <!-- Product List Card with Nested Dropdowns -->
+            <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+                <h3 class="text-xl font-bold mb-4 text-primary-dark flex items-center gap-2">
+                    <i class="fas fa-shopping-bag"></i>
+                    Product List
+                </h3>
+                <ul class="product-list list-none space-y-2">
+                    <!-- Juco Bags Dropdown -->
+                    <details class="sidebar-details p-2 -mx-2 rounded-lg hover:bg-gray-50 transition-colors">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer text-gray-700 hover:text-primary-dark">
+                            <span class="flex items-center gap-2"><i class="fas fa-chevron-right text-primary"></i>Juco
+                                Bags</span>
+                            <svg class="dropdown-arrow w-4 h-4 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 15.3l-6-6 1.4-1.4 4.6 4.6 4.6-4.6 1.4 1.4z" />
+                            </svg>
+                        </summary>
+                        <ul class="list-none pl-6 pt-2 space-y-1 text-sm">
+                            <li><a href="#" class="block text-gray-600 hover:text-primary-dark transition-colors">Juco
+                                    Tote Bags</a></li>
+                            <li><a href="#" class="block text-gray-600 hover:text-primary-dark transition-colors">Juco
+                                    Shopping Bags</a></li>
+                        </ul>
+                    </details>
+                    <!-- Cotton Bags Dropdown -->
+                    <details class="sidebar-details p-2 -mx-2 rounded-lg hover:bg-gray-50 transition-colors">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer text-gray-700 hover:text-primary-dark">
+                            <span class="flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-primary"></i>Cotton Bags</span>
+                            <svg class="dropdown-arrow w-4 h-4 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 15.3l-6-6 1.4-1.4 4.6 4.6 4.6-4.6 1.4 1.4z" />
+                            </svg>
+                        </summary>
+                        <ul class="list-none pl-6 pt-2 space-y-1 text-sm">
+                            <li><a href="#" class="block text-gray-600 hover:text-primary-dark transition-colors">Cotton
+                                    Tote Bags</a></li>
+                            <li><a href="#" class="block text-gray-600 hover:text-primary-dark transition-colors">Cotton
+                                    Grocery Bags</a></li>
+                        </ul>
+                    </details>
+                    <!-- Jute Bags Dropdown -->
+                    <details class="sidebar-details p-2 -mx-2 rounded-lg hover:bg-gray-50 transition-colors">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer text-gray-700 hover:text-primary-dark">
+                            <span class="flex items-center gap-2"><i class="fas fa-chevron-right text-primary"></i>Jute
+                                Bags</span>
+                            <svg class="dropdown-arrow w-4 h-4 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 15.3l-6-6 1.4-1.4 4.6 4.6 4.6-4.6 1.4 1.4z" />
+                            </svg>
+                        </summary>
+                        <ul class="list-none pl-6 pt-2 space-y-1 text-sm">
+                            <li><a href="#" class="block text-gray-600 hover:text-primary-dark transition-colors">Jute
+                                    Shopping Bags</a></li>
+                            <li><a href="#" class="block text-gray-600 hover:text-primary-dark transition-colors">Jute
+                                    Promotional Bags</a></li>
+                            <li><a href="#" class="block text-gray-600 hover:text-primary-dark transition-colors">Jute
+                                    Beach Bags</a></li>
+                        </ul>
+                    </details>
+                    <!-- Canvas Bags Dropdown -->
+                    <details class="sidebar-details p-2 -mx-2 rounded-lg hover:bg-gray-50 transition-colors">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer text-gray-700 hover:text-primary-dark">
+                            <span class="flex items-center gap-2"><i
+                                    class="fas fa-chevron-right text-primary"></i>Canvas Bags</span>
+                            <svg class="dropdown-arrow w-4 h-4 text-primary" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 15.3l-6-6 1.4-1.4 4.6 4.6 4.6-4.6 1.4 1.4z" />
+                            </svg>
+                        </summary>
+                        <ul class="list-none pl-6 pt-2 space-y-1 text-sm">
+                            <li><a href="#" class="block text-gray-600 hover:text-primary-dark transition-colors">Canvas
+                                    Tote Bags</a></li>
+                            <li><a href="#" class="block text-gray-600 hover:text-primary-dark transition-colors">Canvas
+                                    Promotional Bags</a></li>
+                        </ul>
+                    </details>
+                    <li><a href="#"
+                            class=" p-2 -mx-2 rounded-lg text-gray-700 hover:bg-gray-50 hover:text-primary-dark transition-colors flex items-center gap-2"><i
+                                class="fas fa-chevron-right text-primary"></i>Handicrafts</a></li>
+                </ul>
+            </div>
+
+            <!-- Recent Blog Posts Card -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-xl font-bold mb-4 text-primary-dark flex items-center gap-2">
+                    <i class="fas fa-blog"></i>
+                    Recent Blog Posts
+                </h3>
+                <ul class="product-list list-none space-y-2">
+                    <li><a href="#" class="text-gray-700 hover:text-primary-dark transition-colors">Types of Bags: A
+                            Guide for HomeOwners</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-primary-dark transition-colors">How Jute Handbags
+                            are Contributing Towards Green Revolution</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-primary-dark transition-colors">Jute Bags Helping in
+                            Promotional Activities</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-primary-dark transition-colors">Jute Purchases as an
+                            Eco-friendly Alternative to Plastic Bags</a></li>
+                </ul>
+            </div>
+        </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer-placeholder">
+    </div>
+
+    
+</body>
+
+</html>
