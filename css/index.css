@@ -1547,3 +1547,17 @@
          height: 280px;
      }
  }
+/* Export Section Styles */
+.export-container img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 640px) {
+    .export-container img {
+        min-height: 200px;
+        object-fit: cover;
+    }
+}
