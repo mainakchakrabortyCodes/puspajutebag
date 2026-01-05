@@ -1361,14 +1361,14 @@
      max-width: 100%;
      max-height: 100%;
      object-fit: contain;
-     filter: grayscale(100%);
-     opacity: 0.7;
+     /* filter: grayscale(100%); Removed grayscale */
+     /* opacity: 0.7; Removed opacity */
      transition: all 0.3s ease;
  }
 
  .slide img:hover {
-     filter: grayscale(0%);
-     opacity: 1;
+     /* filter: grayscale(0%); Removed grayscale restore */
+     /* opacity: 1; */
      transform: scale(1.1);
  }
 
@@ -1439,6 +1439,8 @@
      z-index: 10;
      transform: scale(1.1);
      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+     order: 3;
+     /* Always in the middle */
  }
 
  /* Side Cards */
@@ -1455,9 +1457,22 @@
  }
 
  /* Layout specific positioning adjustments for static visual */
- .snapshot-card.left-2,
+ .snapshot-card.left-2 {
+     transform: scale(0.9);
+     order: 1;
+ }
+
+ .snapshot-card.left-1 {
+     order: 2;
+ }
+
+ .snapshot-card.right-1 {
+     order: 4;
+ }
+
  .snapshot-card.right-2 {
      transform: scale(0.9);
+     order: 5;
  }
 
  /* Navigation Arrows */

@@ -156,24 +156,22 @@
         <div class="slider">
             <div class="slider-track">
                 <!-- 7 Logos duplicated to 14 for seamless loop -->
-                <div class="slide"><img src="https://placehold.co/150x80?text=Sedex" alt="Sedex" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=SA8000" alt="SA 8000" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=GOTS" alt="GOTS" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=Recycled"
-                        alt="Global Recycled Standard" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=Fairtrade" alt="Fairtrade" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=ISO" alt="ISO" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=JuteMark" alt="Jute Mark India" /></div>
+                <div class="slide"><img src="assets/imgi_9_jute-mark-logo.png" alt="Sedex" /></div>
+                <div class="slide"><img src="assets/imgi_8_6.png" alt="SA8000" /></div>
+                <div class="slide"><img src="assets/imgi_3_1.png" alt="GOTS" /></div>
+                <div class="slide"><img src="assets/imgi_3_4.png" /></div>
+                <div class="slide"><img src="assets/imgi_3_5.png" alt="Fairtrade" /></div>
+                <div class="slide"><img src="assets/imgi_3_6.png" alt="ISO" /></div>
+                <div class="slide"><img src="assets/imgi_3_7.png" alt="Jute Mark India" /></div>
 
                 <!-- Duplicate -->
-                <div class="slide"><img src="https://placehold.co/150x80?text=Sedex" alt="Sedex" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=SA8000" alt="SA 8000" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=GOTS" alt="GOTS" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=Recycled"
-                        alt="Global Recycled Standard" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=Fairtrade" alt="Fairtrade" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=ISO" alt="ISO" /></div>
-                <div class="slide"><img src="https://placehold.co/150x80?text=JuteMark" alt="Jute Mark India" /></div>
+                <div class="slide"><img src="assets/imgi_9_jute-mark-logo.png" alt="Sedex" /></div>
+                <div class="slide"><img src="assets/imgi_8_6.png" alt="SA 8000" /></div>
+                <div class="slide"><img src="assets/imgi_3_1.png" alt="GOTS" /></div>
+                <div class="slide"><img src="assets/imgi_3_4.png" alt="Global Recycled Standard" /></div>
+                <div class="slide"><img src="assets/imgi_3_5.png" alt="Fairtrade" /></div>
+                <div class="slide"><img src="assets/imgi_3_6.png" alt="ISO" /></div>
+                <div class="slide"><img src="assets/imgi_3_7.png" alt="Jute Mark India" /></div>
             </div>
         </div>
     </section>
@@ -371,39 +369,30 @@
         <p class="snapshots-subtitle">Take a sneak peak from our production facility</p>
 
         <div class="snapshots-container">
-            <button class="nav-arrow left"><i class="fas fa-arrow-left"></i></button>
-
             <!-- Left 2 -->
             <div class="snapshot-card small left-2">
-
                 <img src="https://placehold.co/180x240?text=Production" alt="Prod 4" />
             </div>
 
             <!-- Left 1 -->
             <div class="snapshot-card small left-1">
-
                 <img src="https://placehold.co/180x240?text=Stock" alt="Prod 5" />
             </div>
 
             <!-- Center Active -->
             <div class="snapshot-card active-center">
-
                 <img src="https://placehold.co/280x380?text=Factory+Line" alt="Main Production" />
             </div>
 
             <!-- Right 1 -->
             <div class="snapshot-card small right-1">
-
                 <img src="https://placehold.co/180x240?text=Building" alt="Prod 2" />
             </div>
 
             <!-- Right 2 -->
             <div class="snapshot-card small right-2">
-
                 <img src="https://placehold.co/180x240?text=Storage" alt="Prod 3" />
             </div>
-
-            <button class="nav-arrow right"><i class="fas fa-arrow-right"></i></button>
         </div>
 
         <button class="btn-know-more">
@@ -782,7 +771,32 @@
             // Init
             startAutoPlay();
         })();
+        // Scroll to Top Button Logic
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.add('show');
+                scrollToTopBtn.classList.remove('hide');
+            } else {
+                scrollToTopBtn.classList.add('hide');
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     </script>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollToTop"
+        class="fixed bottom-8 right-8 bg-[#22c55e] text-white p-3 rounded-full shadow-lg z-50 opacity-0 invisible transition-all duration-300 hover:bg-[#16a34a] focus:outline-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 
 </html>
